@@ -10,21 +10,21 @@ let path={
         html: project_folder + "/",
         css: project_folder + "/css/",
         js: project_folder + "/js/",
-        img: project_folder + "/jmg/",
+        img: project_folder + "/img/",
         fonts: project_folder + "/fonts/",
     },
     src:{
         html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
         css: source_folder + "/scss/style.scss",
         js: source_folder + "/js/main.js",
-        img: source_folder + "/jmg/**/*.{jpg,png,svg,gif,ico,webp}",
+        img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
         fonts: source_folder + "/fonts/*.ttf",
     },
     watch:{
         html: source_folder +"/**/*.html",
         css: source_folder + "/scss/**/*.scss",
         js: source_folder + "/js/**/*.js",
-        img: source_folder + "/jmg/**/*.{jpg,png,svg,gif,ico,webp}",
+        img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
     }, 
     clean:"./" + project_folder + "/"
 }
@@ -70,32 +70,67 @@ function html() {
 }
 
 function css() {
-    return src(path.src.css)
-    .pipe(
-        scss({
-            outputStyle: "expanded"
-        })
-    )
-    .pipe(
-        group_media()
-    )
-    .pipe(
-        autoprefixer({
-            overrideBrowserslist: ["last 5 versions"],
-            cascade: true
-        })
-    )
-    .pipe(webpcss())
-    .pipe(dest(path.build.css))
-    .pipe(clean_css())
-    .pipe(
-        rename({
-            extname: ".min.css"
-        })
-    )
-    .pipe(dest(path.build.css))
-    .pipe(browsersync.stream())
-}
+    return src([
+        'node_modules/normalize.css/normalize.css',
+        'node_modules/magnific-popup/dist/magnific-popup.css',
+        'app/scss/style.scss'
+      ])  
+      .pipe(
+                scss({
+                    outputStyle: "expanded"
+                })
+            )
+            .pipe(
+                group_media()
+            )
+           
+            .pipe(
+                autoprefixer({
+                    overrideBrowserslist: ["last 5 versions"],
+                    cascade: true
+                })
+            )
+            .pipe(webpcss())
+            .pipe(dest(path.build.css))
+            .pipe(clean_css())
+            .pipe(
+                rename({
+                    extname: ".min.css"
+                })
+            )
+            .pipe(dest(path.build.css))
+            .pipe(browsersync.stream())
+        }
+    
+
+//     return src(path.src.css)
+//       
+//     .pipe(
+//         scss({
+//             outputStyle: "expanded"
+//         })
+//     )
+//     .pipe(
+//         group_media()
+//     )
+   
+//     .pipe(
+//         autoprefixer({
+//             overrideBrowserslist: ["last 5 versions"],
+//             cascade: true
+//         })
+//     )
+//     .pipe(webpcss())
+//     .pipe(dest(path.build.css))
+//     .pipe(clean_css())
+//     .pipe(
+//         rename({
+//             extname: ".min.css"
+//         })
+//     )
+//     .pipe(dest(path.build.css))
+//     .pipe(browsersync.stream())
+// }
 
 function js() {
     return src(path.src.js)
@@ -125,7 +160,7 @@ function images() {
         imagemin({
             progressive: true,
             svgoPlugins: [{ removeViewBox: false }],
-            interpased: true,
+            interlased: true,
             optimizationLevel: 3
         })
     )
@@ -212,11 +247,11 @@ function clean(params) {
 
 
 
-let build = gulp.series(clean, gulp.parallel(js, css, html, fonts), fontStyle);
+let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts), fontsStyle);
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 
-exports.fontStyle = fontStyle;
+exports.fontsStyle = fontsStyle;
 exports.fonts = fonts;
 exports.images = images;
 exports.js = js;

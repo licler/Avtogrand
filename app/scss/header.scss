@@ -1,0 +1,125 @@
+// start header
+.header__top-wrapper {
+    background-color: #fff;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $color-grey;
+    align-items: center;
+}
+
+.menu__list {
+    font-family: "ProximaNova-Light";
+    font-size: 14px;
+    line-height: 22px;
+
+    li {
+        display: inline;
+    }
+
+    li+li {
+        margin-left: 25px;
+    }
+}
+
+.header__top-email {
+    font-size: 14px;
+    font-family: "ProximaNova-Bold";
+}
+
+.header__top-btn {
+    width: 140px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: $red;
+    color: #fff;
+    font-size: 12px;
+    font-family: "ProximaNova-Bold";
+    text-align: center;
+}
+
+.header__down {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a+a {
+        margin-left: 8px;
+    }
+
+}
+
+.header__top-info {
+    margin-left: 70px;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "ProximaNova-Bold";
+    margin-right: 30px;
+}
+
+.header__top-desc {
+    font-family: "ProximaNova-Light";
+    font-size: 14px;
+    line-height: 22px;
+}
+// end header
+
+
+// start info-page
+
+.info-page {
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 610px;
+    padding: 120px 0;
+}
+.info-page__wrapper {
+    width: 455px;
+    color: #fff;
+    .info-page__title {
+        line-height: 50px;
+        font-size: 32px;
+        font-family: "ProximaNova-Bold";
+        margin-bottom: 50px;
+        span {
+            font-size: 40px;
+            line-height: 50px;
+            font-family: "ProximaNova-Extrabld";
+            text-transform: uppercase;
+            
+        }
+    }
+    .info-page__text {
+        font-size: 24px;
+        line-height: 32px;
+        font-family: "ProximaNova-Light";
+        margin-bottom: 55px;
+        span {
+            font-family: "ProximaNova-Bold";
+        }
+    }
+    .info-page__btn {
+        width: 300px;
+        border-radius: 8px;
+        background-color: $red;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        font-size: 18px;
+        font-family: "ProximaNova-Bold";
+    }
+}
+
+
+
+
+
+// end info-page
