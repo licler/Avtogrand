@@ -1,0 +1,39 @@
+// start specific.html
+.specific-page {
+    background-color: $lightgrey;
+    padding: 95px 0;
+}
+.specific-page__wrapper {
+    text-align: center;
+    color: $color-black;
+    .specific-page__title {
+        font-size: 30px;
+        line-height: 22px;
+        font-family: "ProximaNova-Bold";
+        margin-bottom: 70px;
+    }
+    .specific-page__items {
+        display: flex;
+        justify-content: space-between;
+        .specific-page__item {
+            width: 260px;
+            .specific-page__images {
+                margin-bottom: 40px;
+                display: flex;
+                height: 115px;
+                align-items: center;
+                justify-content: center;
+            }
+            .specific-page__text {
+                line-height: 22px;
+                font-family: "ProximaNova-Regular";
+            }
+            .text-main {
+                font-family: "ProximaNova-Bold";  
+            }
+        }
+    }
+}
+
+
+// end specific.html

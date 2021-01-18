@@ -287,3 +287,115 @@ body {
 .services__item-line .services__item-name:hover {
   color: #e61010;
 }
+
+.about-page {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  padding: 90px 0;
+}
+
+.about-page__wrapper {
+  text-align: center;
+  color: #fff;
+}
+
+.about-page__wrapper .about-page__title {
+  font-size: 30px;
+  height: 22px;
+  font-family: "ProximaNova-Bold";
+  margin-bottom: 75px;
+}
+
+.about-page__wrapper .about-page__text {
+  line-height: 20px;
+  font-family: "ProximaNova-Light";
+}
+
+.about-page__wrapper .about-page__text .text-two {
+  margin-top: 22px;
+  margin-bottom: 80px;
+}
+
+.about-page__wrapper .about-page__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-page__wrapper .about-page__items .about-page__content {
+  width: 180px;
+}
+
+.about-page__wrapper .about-page__items .about-page__content .about-page__num {
+  font-size: 48px;
+  line-height: 20px;
+  font-family: "ProximaNova-Bold";
+  margin-bottom: 22px;
+}
+
+.about-page__wrapper .about-page__items .about-page__content .about-page__num span {
+  font-size: 24px;
+}
+
+.about-page__wrapper .about-page__items .about-page__content .about-page__info {
+  line-height: 22px;
+  font-family: "ProximaNova-Light";
+}
+
+.specific-page {
+  background-color: #f5f5f5;
+  padding: 95px 0;
+}
+
+.specific-page__wrapper {
+  text-align: center;
+  color: #1c1c1c;
+}
+
+.specific-page__wrapper .specific-page__title {
+  font-size: 30px;
+  line-height: 22px;
+  font-family: "ProximaNova-Bold";
+  margin-bottom: 70px;
+}
+
+.specific-page__wrapper .specific-page__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.specific-page__wrapper .specific-page__items .specific-page__item {
+  width: 260px;
+}
+
+.specific-page__wrapper .specific-page__items .specific-page__item .specific-page__images {
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 115px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.specific-page__wrapper .specific-page__items .specific-page__item .specific-page__text {
+  line-height: 22px;
+  font-family: "ProximaNova-Regular";
+}
+
+.specific-page__wrapper .specific-page__items .specific-page__item .text-main {
+  font-family: "ProximaNova-Bold";
+}
