@@ -70,67 +70,67 @@ function html() {
 }
 
 function css() {
-    return src([
-        'node_modules/normalize.css/normalize.css',
-        'node_modules/magnific-popup/dist/magnific-popup.css',
-        'app/scss/style.scss'
-      ])  
-      .pipe(
-                scss({
-                    outputStyle: "expanded"
-                })
-            )
-            .pipe(
-                group_media()
-            )
+    // return src([
+    //     'node_modules/normalize.css/normalize.css',
+    //     'node_modules/magnific-popup/dist/magnific-popup.css',
+    //     'app/scss/style.scss'
+    //   ])  
+    //   .pipe(
+    //             scss({
+    //                 outputStyle: "expanded"
+    //             })
+    //         )
+    //         .pipe(
+    //             group_media()
+    //         )
            
-            .pipe(
-                autoprefixer({
-                    overrideBrowserslist: ["last 5 versions"],
-                    cascade: true
-                })
-            )
-            .pipe(webpcss())
-            .pipe(dest(path.build.css))
-            .pipe(clean_css())
-            .pipe(
-                rename({
-                    extname: ".min.css"
-                })
-            )
-            .pipe(dest(path.build.css))
-            .pipe(browsersync.stream())
-        }
+    //         .pipe(
+    //             autoprefixer({
+    //                 overrideBrowserslist: ["last 5 versions"],
+    //                 cascade: true
+    //             })
+    //         )
+    //         .pipe(webpcss())
+    //         .pipe(dest(path.build.css))
+    //         .pipe(clean_css())
+    //         .pipe(
+    //             rename({
+    //                 extname: ".min.css"
+    //             })
+    //         )
+    //         .pipe(dest(path.build.css))
+    //         .pipe(browsersync.stream())
+    //     }
     
 
-//     return src(path.src.css)
+    return src(path.src.css)
       
-//     .pipe(
-//         scss({
-//             outputStyle: "expanded"
-//         })
-//     )
-//     .pipe(
-//         group_media()
-//     )
+    .pipe(
+        scss({
+            outputStyle: "expanded"
+        })
+    )
+    .pipe(
+        group_media()
+    )
    
-//     .pipe(
-//         autoprefixer({
-//             overrideBrowserslist: ["last 5 versions"],
-//             cascade: true
-//         })
-//     )
-//     .pipe(webpcss())
-//     .pipe(dest(path.build.css))
-//     .pipe(clean_css())
-//     .pipe(
-//         rename({
-//             extname: ".min.css"
-//         })
-//     )
-//     .pipe(dest(path.build.css))
-//     .pipe(browsersync.stream())
-// }
+    .pipe(
+        autoprefixer({
+            overrideBrowserslist: ["last 5 versions"],
+            cascade: true
+        })
+    )
+    .pipe(webpcss())
+    .pipe(dest(path.build.css))
+    .pipe(clean_css())
+    .pipe(
+        rename({
+            extname: ".min.css"
+        })
+    )
+    .pipe(dest(path.build.css))
+    .pipe(browsersync.stream())
+}
 
 function js() {
     return src(path.src.js)

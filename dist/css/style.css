@@ -399,3 +399,42 @@ body {
 .specific-page__wrapper .specific-page__items .specific-page__item .text-main {
   font-family: "ProximaNova-Bold";
 }
+
+.advantages-page {
+  background-color: #fff;
+  padding: 95px 0;
+}
+
+.advantages-page__wrapper {
+  text-align: center;
+}
+
+.advantages-page__wrapper .advantages-page__title {
+  font-size: 30px;
+  font-family: "ProximaNova-Bold";
+  color: #1c1c1c;
+  margin-bottom: 70px;
+}
+
+.advantages-page__wrapper .advantages-page__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.advantages-page__wrapper .advantages-page__items .advantages-page__info {
+  width: 185px;
+  text-align: right;
+}
+
+.advantages-page__wrapper .advantages-page__items .advantages-page__fis {
+  width: 210px;
+  background-color: #26b83a;
+  text-align: center;
+}
+
+.advantages-page__wrapper .advantages-page__items .advantages-page__jus {
+  width: 210px;
+  background-color: #fff;
+  text-align: center;
+}

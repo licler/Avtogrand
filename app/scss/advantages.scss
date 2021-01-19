@@ -1,0 +1,37 @@
+// start advantages-page
+.advantages-page {
+    background-color: #fff;
+    padding: 95px 0;
+}
+.advantages-page__wrapper {
+    text-align: center;
+    .advantages-page__title {
+        font-size: 30px;
+        font-family: "ProximaNova-Bold";
+        color: $color-black;
+        margin-bottom: 70px;
+    }
+    .advantages-page__items {
+        display: flex;
+        .advantages-page__info {
+            width: 185px;
+            text-align: right;
+        }
+        .advantages-page__fis {
+            width: 210px;
+            background-color: $green;
+            text-align: center;
+        }
+        .advantages-page__jus {
+            width: 210px;
+            background-color: #fff;
+            text-align: center;
+        }
+    }
+}
+
+
+
+
+
+// end advantages-page
