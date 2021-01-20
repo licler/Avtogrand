@@ -3,32 +3,110 @@
     background-color: #fff;
     padding: 95px 0;
 }
+
 .advantages-page__wrapper {
     text-align: center;
+
     .advantages-page__title {
         font-size: 30px;
         font-family: "ProximaNova-Bold";
         color: $color-black;
         margin-bottom: 70px;
     }
+
     .advantages-page__items {
         display: flex;
+
         .advantages-page__info {
-            width: 185px;
+            width: 225px;
             text-align: right;
+            font-size: 13px;
+            font-family: "ProximaNova-Regular";
+            padding: 70px 25px 0 25px;
+
+            li+li {
+                margin-bottom: 30px;
+            }
+
+            li:first-child {
+                margin-bottom: 30px;
+            }
         }
+
         .advantages-page__fis {
-            width: 210px;
+            width: 200px;
             background-color: $green;
             text-align: center;
+            padding: 30px;
+            color: #fff;
+            font-size: 13px;
+            font-family: "ProximaNova-Light";
+
+            li+li {
+                margin-bottom: 30px;
+            }
+
+            li:first-child {
+                margin-bottom: 25px;
+                font-family: "ProximaNova-Bold";
+            }
         }
+
         .advantages-page__jus {
-            width: 210px;
+            padding: 25px 20px 0;
+            width: 245px;
             background-color: #fff;
             text-align: center;
+            border: 1px solid $border;
+            font-size: 13px;
+            font-family: "ProximaNova-Regular";
+
+            li+li {
+                margin-bottom: 30px;
+            }
+
+            li:first-child {
+                margin-bottom: 25px;
+                font-family: "ProximaNova-Bold";
+            }
         }
+        .advantages-page__stat {
+            width: 355px;
+            padding: 0 25px;
+            .advantages-page__stat-title {
+                font-family: "ProximaNova-Bold"; 
+                margin-bottom: 30px; 
+            }
+            .advantages-page__stat-wrapper {
+                display: flex;
+                height: 30px;
+                align-items: center;
+                margin-bottom: 20px;
+                li {
+                    margin-left: 15px;
+                    font-family: "ProximaNova-Bold"; 
+                }
+                span {
+                    font-family: "ProximaNova-Regular";
+                }
+            }
+            .advantages-page__stat-btn {
+                width: 300px;
+                padding: 20px;
+                text-align: center;
+                background-color: $darkred;
+                border-radius: 5px;
+                color: #fff;
+                font-size: 18px;
+                font-family: "ProximaNova-Bold"; 
+                margin-top: 15px;
+            }
+            
+        }
+
     }
 }
+
 
 
 

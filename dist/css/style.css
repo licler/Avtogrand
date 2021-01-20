@@ -423,18 +423,97 @@ body {
 }
 
 .advantages-page__wrapper .advantages-page__items .advantages-page__info {
-  width: 185px;
+  width: 225px;
   text-align: right;
+  font-size: 13px;
+  font-family: "ProximaNova-Regular";
+  padding: 70px 25px 0 25px;
+}
+
+.advantages-page__wrapper .advantages-page__items .advantages-page__info li + li {
+  margin-bottom: 30px;
+}
+
+.advantages-page__wrapper .advantages-page__items .advantages-page__info li:first-child {
+  margin-bottom: 30px;
 }
 
 .advantages-page__wrapper .advantages-page__items .advantages-page__fis {
-  width: 210px;
+  width: 200px;
   background-color: #26b83a;
   text-align: center;
+  padding: 30px;
+  color: #fff;
+  font-size: 13px;
+  font-family: "ProximaNova-Light";
+}
+
+.advantages-page__wrapper .advantages-page__items .advantages-page__fis li + li {
+  margin-bottom: 30px;
+}
+
+.advantages-page__wrapper .advantages-page__items .advantages-page__fis li:first-child {
+  margin-bottom: 25px;
+  font-family: "ProximaNova-Bold";
 }
 
 .advantages-page__wrapper .advantages-page__items .advantages-page__jus {
-  width: 210px;
+  padding: 25px 20px 0;
+  width: 245px;
   background-color: #fff;
   text-align: center;
+  border: 1px solid #e8e8e8;
+  font-size: 13px;
+  font-family: "ProximaNova-Regular";
+}
+
+.advantages-page__wrapper .advantages-page__items .advantages-page__jus li + li {
+  margin-bottom: 30px;
+}
+
+.advantages-page__wrapper .advantages-page__items .advantages-page__jus li:first-child {
+  margin-bottom: 25px;
+  font-family: "ProximaNova-Bold";
+}
+
+.advantages-page__wrapper .advantages-page__items .advantages-page__stat {
+  width: 355px;
+  padding: 0 25px;
+}
+
+.advantages-page__wrapper .advantages-page__items .advantages-page__stat .advantages-page__stat-title {
+  font-family: "ProximaNova-Bold";
+  margin-bottom: 30px;
+}
+
+.advantages-page__wrapper .advantages-page__items .advantages-page__stat .advantages-page__stat-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.advantages-page__wrapper .advantages-page__items .advantages-page__stat .advantages-page__stat-wrapper li {
+  margin-left: 15px;
+  font-family: "ProximaNova-Bold";
+}
+
+.advantages-page__wrapper .advantages-page__items .advantages-page__stat .advantages-page__stat-wrapper span {
+  font-family: "ProximaNova-Regular";
+}
+
+.advantages-page__wrapper .advantages-page__items .advantages-page__stat .advantages-page__stat-btn {
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  background-color: #d51f1f;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  font-family: "ProximaNova-Bold";
+  margin-top: 15px;
 }
