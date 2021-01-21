@@ -1,0 +1,56 @@
+// start consultant-page
+.consultant-page {
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 470px;
+    padding: 95px 0;
+}
+.consultant-page__wrapper {
+    display: flex;
+    justify-content: space-between;
+    .consultant-page__title {
+        font-size: 30px;
+        font-family: "MullerBold";
+        color: #fff;
+        width: 490px;
+        margin-bottom: 50px;
+    }
+    ol {
+        list-style-type: none; /* Убираем исходные маркеры */
+        counter-reset:  item; /* Обнуляем счетчик списка */
+       }
+       li::before {
+        content: counter(item) '.'; 
+        counter-increment: item; /* Задаём имя счетчика */
+        color: $red-1;
+        font-size: 18px;
+        font-family: "MullerMedium";
+        margin-right: 20px;
+       }
+       li + li {
+           margin-bottom: 25px;
+       }
+       li:first-child {
+        margin-bottom: 25px;
+       }
+       li {
+           color: #fff;
+           font-family: "MullerLight";
+       }
+       a {
+           color: #fff;
+           font-family: "MullerLight";
+           text-decoration: underline;
+       }
+       .consultant-page__links {
+        margin-left: 150px;
+        margin-top: 25px;
+        a {
+            margin-bottom: 25px;
+        }
+    }   
+
+}
+
+// end consultant-page

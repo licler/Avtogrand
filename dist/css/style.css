@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @font-face {
   font-family: "MullerBold";
   font-display: swap;
@@ -84,6 +86,12 @@ li {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+ol,
+li {
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -516,4 +524,74 @@ body {
   font-size: 18px;
   font-family: "ProximaNova-Bold";
   margin-top: 15px;
+}
+
+.consultant-page {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 470px;
+  padding: 95px 0;
+}
+
+.consultant-page__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.consultant-page__wrapper .consultant-page__title {
+  font-size: 30px;
+  font-family: "MullerBold";
+  color: #fff;
+  width: 490px;
+  margin-bottom: 50px;
+}
+
+.consultant-page__wrapper ol {
+  list-style-type: none;
+  /* Убираем исходные маркеры */
+  counter-reset: item;
+  /* Обнуляем счетчик списка */
+}
+
+.consultant-page__wrapper li::before {
+  content: counter(item) ".";
+  counter-increment: item;
+  /* Задаём имя счетчика */
+  color: #e41e1e;
+  font-size: 18px;
+  font-family: "MullerMedium";
+  margin-right: 20px;
+}
+
+.consultant-page__wrapper li + li {
+  margin-bottom: 25px;
+}
+
+.consultant-page__wrapper li:first-child {
+  margin-bottom: 25px;
+}
+
+.consultant-page__wrapper li {
+  color: #fff;
+  font-family: "MullerLight";
+}
+
+.consultant-page__wrapper a {
+  color: #fff;
+  font-family: "MullerLight";
+  text-decoration: underline;
+}
+
+.consultant-page__wrapper .consultant-page__links {
+  margin-left: 150px;
+  margin-top: 25px;
+}
+
+.consultant-page__wrapper .consultant-page__links a {
+  margin-bottom: 25px;
 }
