@@ -1,0 +1,66 @@
+// start reviews-page
+.reviews-page {
+    background-color: $color-white;
+    padding: 95px 0 85px;
+}
+.reviews-page__wrapper {
+    text-align: center;
+    margin: 0 auto;
+    .reviews-page__title {
+        font-size: 30px;
+        font-family: "MullerBold";
+        color: $color-2;
+        margin-bottom: 65px;
+    }
+    .reviews-page__tabs {
+        text-align: center;
+        margin: 0 auto;
+        .tabs {
+            display: flex;
+          justify-content: center;
+            .tab {
+                // width: 100%;
+                padding: 10px;
+                text-transform: uppercase;
+                cursor: pointer;
+                font-size: 14px;
+                color: $color-2;
+               font-family: "MullerMedium";
+               margin-bottom: 50px;
+            }
+            .tab + .tab {
+                margin-right: 20px;
+            }
+            .tab.active {
+                border: 2px solid $color-3;
+                border-radius: 5px;
+                color: $color-3;
+            }
+            .tab:hover {
+               color: $color-3;
+            }
+            .tab:first-child {
+                margin-right: 20px;
+            }
+        }
+        .tab-item {
+            display: none;
+        }
+        .tab-item:first-child {
+            display: block;
+        }
+        .tab_content {
+            width: 1050px;
+        }
+    }
+
+    
+}
+
+
+
+
+
+
+
+// end reviews-page
