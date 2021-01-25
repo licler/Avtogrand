@@ -7,6 +7,12 @@ $(function(){
             $('#'+id).addClass('active-tab').fadeIn();
             return false;
         });
+
+        $('.tab-box__items').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+          });
 	
 	
 	
