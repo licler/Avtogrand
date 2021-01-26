@@ -11,10 +11,21 @@ $(function(){
         $('.tab-box__items').slick({
             infinite: true,
             slidesToShow: 3,
-            slidesToScroll: 3
+            slidesToScroll: 3,
+            arrows: true,
+            prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="img/advantages/previous.png" alt=""></button>',
+            nextArrow: '<button type="button" class="slick-btn slick-next"><img src="img/advantages/next.png" alt=""></button>'
           });
-	
-	
+
+          $('.partners-page__items').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            arrows: true,
+            prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="img/advantages/previous.png" alt=""></button>',
+            nextArrow: '<button type="button" class="slick-btn slick-next"><img src="img/advantages/next.png" alt=""></button>'
+          });
+          
 	
 	
 });

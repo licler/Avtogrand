@@ -12,7 +12,7 @@
         color: $color-2;
         margin-bottom: 65px;
         text-align: center;
-        margin: 0 auto;
+        // margin: 0 auto;
     }
 
     .reviews-page__tabs {
@@ -21,6 +21,7 @@
             margin: 0 auto;
             display: flex;
             justify-content: center;
+
             .tab {
                 padding: 10px;
                 text-transform: uppercase;
@@ -68,6 +69,27 @@
             height: 210px;
             margin-bottom: 10px;
         }
+
+        .slick-btn {
+            position: absolute;
+            cursor: pointer;
+            transform: translateY(-50%);
+            border: none;
+            outline: none;
+            background-color: transparent;
+        }
+
+        .slick-next {
+            z-index: 5;
+            top: 125px;
+            right: -50px;
+        }
+
+        .slick-prev {
+            left: -100px;
+            z-index: 5;
+            top: 125px;
+        }
     }
 }
 
@@ -83,6 +105,7 @@
     color: $color-3;
     text-decoration: underline;
 }
+
 
 
 
