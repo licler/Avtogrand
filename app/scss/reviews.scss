@@ -70,26 +70,7 @@
             margin-bottom: 10px;
         }
 
-        .slick-btn {
-            position: absolute;
-            cursor: pointer;
-            transform: translateY(-50%);
-            border: none;
-            outline: none;
-            background-color: transparent;
-        }
-
-        .slick-next {
-            z-index: 5;
-            top: 125px;
-            right: -50px;
-        }
-
-        .slick-prev {
-            left: -100px;
-            z-index: 5;
-            top: 125px;
-        }
+      
     }
 }
 
