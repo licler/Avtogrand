@@ -34,6 +34,7 @@ $(function(){
             $('#'+id).addClass('active-tab').fadeIn();
             return false;
     });
+    new WOW().init();
          
 	
 	
