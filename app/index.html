@@ -24,12 +24,12 @@
                             <li><a href="#">Контакты</a></li>
                         </ul>
                     </nav>
-                    <a class="header__top-btn" href="#">Перезвоните мне</a>
+                    <a class="header__top-btn animate__animated animate__heartBeat animate__infinite	infinite" href="#">Перезвоните мне</a>
                 </div>
                 <div class="header__top-inner">
                     <div class="container">
                         <div class="header__down">
-                            <div class="header__logo wow slideInLeft">
+                            <div class="header__logo animate__animated animate__bounce">
                                 <a href="#">
                                     <img src="img/header/logo.jpg" alt="">
                                 </a>
@@ -75,7 +75,7 @@
 
             </div>
             <div class="services-page__items">
-                <div class="services-page__item">
+                <div class="services-page__item wow slideInLeft">
                     <div class="services__item-line">
                         <div class="services__item-images">
                             <img src="img/services/icon_1.png" alt="">
@@ -86,7 +86,7 @@
                     </div>
                 </div>
 
-                <div class="services-page__item">
+                <div class="services-page__item animate__animated animate__bounce animate__delay-3s">
                     <div class="services__item-line">
                         <div class="services__item-images">
                             <img src="img/services/icon_2.png" alt="">
@@ -97,7 +97,7 @@
                     </div>
                 </div>
 
-                <div class="services-page__item">
+                <div class="services-page__item animate__animated animate__bounce animate__delay-2s">
                     <div class="services__item-line">
                         <div class="services__item-images">
                             <img src="img/services/icon_3.png" alt="">
@@ -108,7 +108,7 @@
                     </div>
                 </div>
 
-                <div class="services-page__item">
+                <div class="services-page__item animate__animated animate__bounce animate__delay-3s">
                     <div class="services__item-line">
                         <div class="services__item-images">
                             <img src="img/services/icon_4.png" alt="">
@@ -119,7 +119,7 @@
                     </div>
                 </div>
 
-                <div class="services-page__item">
+                <div class="services-page__item animate__animated animate__bounce animate__delay-2s">
                     <div class="services__item-line">
                         <div class="services__item-images">
                             <img src="img/services/icon_5.png" alt="">
@@ -130,7 +130,7 @@
                     </div>
                 </div>
 
-                <div class="services-page__item">
+                <div class="services-page__item animate__animated animate__bounce animate__delay-3s">
                     <div class="services__item-line">
                         <div class="services__item-images">
                             <img src="img/services/icon_6.png" alt="">
@@ -141,7 +141,7 @@
                     </div>
                 </div>
 
-                <div class="services-page__item">
+                <div class="services-page__item animate__animated animate__bounce animate__delay-2s">
                     <div class="services__item-line">
                         <div class="services__item-images">
                             <img src="img/services/icon_7.png" alt="">
@@ -152,7 +152,7 @@
                     </div>
                 </div>
 
-                <div class="services-page__item">
+                <div class="services-page__item animate__animated animate__bounce animate__delay-3s">
                     <div class="services__item-line">
                         <div class="services__item-images">
                             <img src="img/services/icon_8.png" alt="">
@@ -162,7 +162,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="services-page__item">
+                <div class="services-page__item animate__animated animate__bounce animate__delay-2s">
                     <div class="services__item-line">
                         <div class="services__item-images">
                             <img src="img/services/icon_9.png" alt="">
@@ -178,7 +178,7 @@
     <section class="about-page" style="background-image: url('img/About/about_bg.jpg');">
         <div class="container">
             <div class="about-page__wrapper">
-                <div class="about-page__title">
+                <div class="about-page__title wow animate__animated animate__fadeInRight">
                     О сервисе Advogrand
 
 
@@ -246,7 +246,7 @@
                 </div>
                 <div class="specific-page__items">
                     <div class="specific-page__item">
-                        <div class="specific-page__images">
+                        <div class="specific-page__images animate__animated animate__fadeInDown animate__delay-1s">
                             <img src="img/specific/icon_1.png" alt="">
                         </div>
                         <div class="specific-page__text">
@@ -256,7 +256,7 @@
                     </div>
 
                     <div class="specific-page__item">
-                        <div class="specific-page__images">
+                        <div class="specific-page__images animate__animated animate__fadeInDown animate__delay-2s">
                             <img src="img/specific/icon_2.png" alt="">
                         </div>
                         <div class="specific-page__text">
@@ -266,7 +266,7 @@
                     </div>
 
                     <div class="specific-page__item">
-                        <div class="specific-page__images">
+                        <div class="specific-page__images animate__animated animate__fadeInDown animate__delay-3s">
                             <img src="img/specific/icon_3.png" alt="">
                         </div>
                         <div class="specific-page__text text-main">
@@ -355,7 +355,7 @@
         <div class="container">
             <div class="consultant-page__wrapper">
                 <div class="consultant-page__inner">
-                    <div class="consultant-page__title">
+                    <div class="consultant-page__title wow bounceInDown">
                         Хотите получить бесплатную юридическую консультацию?
                     </div>
                     <ol class="consultant__menu" type="1">
@@ -735,9 +735,11 @@
 
 
 
-    <!-- <script
-    src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+  
     <script src="js/main.min.js"></script>
+    <script>
+        new WOW().init();
+        </script>
 </body>
 
 </html>

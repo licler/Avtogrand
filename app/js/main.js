@@ -1,4 +1,6 @@
 $(function(){
+  
+  
     $('.reviews-page__tabs .tab').on('click', function(event) {
         var id = $(this).attr('data-id');
             $('.reviews-page__tabs').find('.tab-item').removeClass('active-tab').hide();
@@ -34,7 +36,13 @@ $(function(){
             $('#'+id).addClass('active-tab').fadeIn();
             return false;
     });
-    new WOW().init();
+    
+    
+    
+      new WOW().init();
+   
+    
+   
          
 	
 	
