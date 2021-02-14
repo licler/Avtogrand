@@ -16,7 +16,33 @@ $(function(){
             slidesToScroll: 3,
             arrows: true,
             prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="img/advantages/previous.png" alt=""></button>',
-            nextArrow: '<button type="button" class="slick-btn slick-next"><img src="img/advantages/next.png" alt=""></button>'
+            nextArrow: '<button type="button" class="slick-btn slick-next"><img src="img/advantages/next.png" alt=""></button>',
+            responsive: [
+              {
+                breakpoint: 1273,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+                  arrows: false
+                }
+              },
+              {
+                breakpoint: 1080,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2,
+                  arrows: false
+                }
+              },
+              {
+                breakpoint: 860,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2,
+                  arrows: false
+                }
+              },
+            ]
           });
 
           $('.partners-page__items').slick({
@@ -40,7 +66,12 @@ $(function(){
     
     
       new WOW().init();
+
+
+
    
+
+     
     
    
          
