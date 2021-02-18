@@ -37,13 +37,14 @@ $(function(){
               {
                 breakpoint: 860,
                 settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 2,
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
                   arrows: false
                 }
               },
             ]
           });
+          
 
           $('.partners-page__items').slick({
             infinite: true,
@@ -51,7 +52,31 @@ $(function(){
             slidesToScroll: 4,
             arrows: true,
             prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="img/advantages/previous.png" alt=""></button>',
-            nextArrow: '<button type="button" class="slick-btn slick-next"><img src="img/advantages/next_1.png" alt=""></button>'
+            nextArrow: '<button type="button" class="slick-btn slick-next"><img src="img/advantages/next_1.png" alt=""></button>',
+            responsive: [
+              {
+                breakpoint: 925,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+                  arrows: false
+                }
+              },
+              {
+                breakpoint: 735,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 525,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+            ]
           });
 
           $('.tarif__tabs .tab').on('click', function(event) {
