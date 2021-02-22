@@ -1,0 +1,48 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+body {
+    font-size: 16px;
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.container-fluid {
+    padding: 0 10px;
+    margin: 0 auto;
+}

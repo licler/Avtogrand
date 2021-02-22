@@ -1,0 +1,59 @@
+// start about.html
+.about-page {
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    padding: 90px 0;
+}
+
+.about-page__wrapper {
+    text-align: center;
+    color: #fff;
+
+    .about-page__title {
+        font-size: 30px;
+        height: 22px;
+        font-family: "ProximaNova-Bold";
+        margin-bottom: 75px;
+    }
+
+    .about-page__text {
+        line-height: 20px;
+        font-family: "ProximaNova-Light";
+
+        .text-two {
+            margin-top: 22px;
+            margin-bottom: 80px;
+        }
+    }
+
+    .about-page__items {
+        display: flex;
+        justify-content: space-between;
+        .about-page__content {
+            width: 180px;
+            .about-page__num {
+                font-size: 48px;
+                line-height: 20px;
+                font-family: "ProximaNova-Bold";
+                margin-bottom: 22px;
+                span {
+                    font-size: 24px;
+                }
+            }
+
+            .about-page__info {
+                line-height: 22px;
+                font-family: "ProximaNova-Light";
+            }
+
+        }
+    }
+
+}
+
+
+
+
+// end about.html
