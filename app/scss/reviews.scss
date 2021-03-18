@@ -86,9 +86,17 @@
     text-decoration: underline;
 }
 
+.slick-track {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding: 0 20px;
+}
 
-
-
+// .slick-slide {
+//     padding: 0 105px;
+//     margin: 0 -15px;
+// }
 
 
 

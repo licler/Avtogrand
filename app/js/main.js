@@ -11,26 +11,32 @@ $(function(){
     });
 
         $('.tab-box__items').slick({
-            infinite: true,
+            infinite: false,
+            adaptiveHeight: true,
             slidesToShow: 3,
             slidesToScroll: 3,
+            // speed: 100,
             arrows: true,
+            // autoplay: false,
+            // autoplaySpeed: 1500,
+            // variableWidth: true,
+
             prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="img/advantages/previous.png" alt=""></button>',
-            nextArrow: '<button type="button" class="slick-btn slick-next"><img src="img/advantages/next.png" alt=""></button>',
+            nextArrow: '<button type="button" class="slick-btn slick-next"><img src="img/advantages/next_1.png" alt=""></button>',
             responsive: [
+              // {
+              //   breakpoint: 1273,
+              //   settings: {
+              //     slidesToShow: 3,
+              //     // slidesToScroll: 2,
+              //     arrows: false
+              //   }
+              // },
               {
-                breakpoint: 1273,
-                settings: {
-                  slidesToShow: 3,
-                  slidesToScroll: 3,
-                  arrows: false
-                }
-              },
-              {
-                breakpoint: 1080,
+                breakpoint: 1090,
                 settings: {
                   slidesToShow: 2,
-                  slidesToScroll: 2,
+                  slidesToScroll: 1,
                   arrows: false
                 }
               },
@@ -38,11 +44,11 @@ $(function(){
                 breakpoint: 860,
                 settings: {
                   slidesToShow: 1,
-                  slidesToScroll: 1,
-                  arrows: false
+                  slidesToScroll: 1
                 }
               },
-            ]
+            ],
+          
           });
           
 
@@ -58,7 +64,7 @@ $(function(){
                 breakpoint: 925,
                 settings: {
                   slidesToShow: 3,
-                  slidesToScroll: 3,
+                  slidesToScroll: 2,
                   arrows: false
                 }
               },
@@ -66,7 +72,7 @@ $(function(){
                 breakpoint: 735,
                 settings: {
                   slidesToShow: 2,
-                  slidesToScroll: 2
+                  slidesToScroll: 1
                 }
               },
               {
@@ -92,7 +98,15 @@ $(function(){
     
       new WOW().init();
 
-
+      // wow = new WOW(
+      //   {
+      //   boxClass:     'wow',      // default
+      //   animateClass: 'animated', // default
+      //   offset:       0,          // default
+      //   mobile:       false       // default
+      //   }
+      //                   )
+      //   wow.init();
 
    
 
