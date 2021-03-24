@@ -12,7 +12,6 @@ body {
     height: 100%;
     position: relative;
     // overflow-x: hidden;
-    
   
 }
 
@@ -37,14 +36,15 @@ a {
 body {
     font-size: 16px;
     min-width: 320px;
+    
 }
-
 .container {
     max-width: 960px;
     padding: 0 10px;
     margin: 0 auto;
 }
 .container-fluid {
+    max-width: 1200px;
     padding: 0 10px;
     margin: 0 auto;
 }
