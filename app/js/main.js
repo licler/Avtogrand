@@ -12,7 +12,7 @@ $(function(){
 
       $('.tab-box__items').slick({
           infinite: true,
-          adaptiveHeight: true,
+          // adaptiveHeight: true,
           slidesToShow: 3,
           slidesToScroll: 1,
           // speed: 100,
@@ -20,24 +20,21 @@ $(function(){
           // autoplay: false,
           // autoplaySpeed: 1500,
           // variableWidth: true,
+      
+          // enterPadding: '10px',
 
           prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="img/advantages/previous.png" alt=""></button>',
           nextArrow: '<button type="button" class="slick-btn slick-next"><img src="img/advantages/next_1.png" alt=""></button>',
           responsive: [
             {
-              breakpoint: 1280,
+              breakpoint: 1200,
               settings: {
                 slidesToShow: 2,
                 // slidesToScroll: 2,
                 arrows: false
               }
             },
-            // {
-            //   breakpoint: 1090,
-            //   settings: {
-            //     slidesToShow: 2,
-            //   }
-            // },
+           
             {
               breakpoint: 900,
               settings: {
@@ -53,28 +50,30 @@ $(function(){
         $('.partners-page__items').slick({
           infinite: true,
           slidesToShow: 4,
-          slidesToScroll: 4,
+          slidesToScroll: 1,
           arrows: true,
-          prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="img/advantages/previous.png" alt=""></button>',
-          nextArrow: '<button type="button" class="slick-btn slick-next"><img src="img/advantages/next_1.png" alt=""></button>',
+          prevArrow: '<button type="button" class="slick-btn slick-prev__partners"><img src="img/advantages/previous.png" alt=""></button>',
+          nextArrow: '<button type="button" class="slick-btn slick-next__partners"><img src="img/advantages/next_1.png" alt=""></button>',
           responsive: [
             {
-              breakpoint: 925,
+              breakpoint: 1200,
               settings: {
                 slidesToShow: 3,
                 arrows: false
               }
             },
             {
-              breakpoint: 735,
+              breakpoint: 800,
               settings: {
                 slidesToShow: 2,
+                arrows: false
               }
             },
             {
-              breakpoint: 525,
+              breakpoint: 600,
               settings: {
                 slidesToShow: 1,
+                arrows: false
               }
             }
           ]

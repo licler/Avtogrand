@@ -62,27 +62,35 @@
             max-width: 100%;
         }
 
-        .tab-box__video {
-            display: block;
-            max-width: 100%;
-            height: 210px;
-            margin: 0 auto;
+        .tab-box {
+            video {
+                display: block;
+                max-width: 300px;
+                width: 100%;
+                // height: 210px;
+                // margin: 0px auto 20px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
         }
     }
 
     .tab-box__items {
         padding: 0 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .tab-box__title {
-        display: block;
+        
         font-size: 13px;
         font-family: "MullerLight";
         color: $color-2;
-        text-align: justify;
-        width: 290px;
-       
-
+        text-align-last: left;
+        max-width: 290px;
+        width: 100%;
+      
     }
 
     .tab-box__title:hover {
@@ -91,29 +99,4 @@
     }
 }
 
-
-
-// .slick-track {
-//     display: flex;
-//     justify-content: space-between;
-//     text-align: left;
-//     padding: 0 20px;
-// }
-
-// .slick-slide {
-//     padding: 0 105px;
-//     margin: 0 -15px;
-// }
-// .tab-box__items {
-//     padding: 0 50px
-// }
-// .slick-track {
-//     margin: 0 90px;
-// }
-// .slick-slide + .slick-slide {
-//     margin-left: -73px;
-// }
-// .slick-list {
-//     margin: 0 90px;
-// }
 // end reviews-page
