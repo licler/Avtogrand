@@ -52,6 +52,8 @@ $(function(){
           slidesToShow: 4,
           slidesToScroll: 1,
           arrows: true,
+          autoplay: true,
+          autoplaySpeed: 3000,
           prevArrow: '<button type="button" class="slick-btn slick-prev__partners"><img src="img/advantages/previous.png" alt=""></button>',
           nextArrow: '<button type="button" class="slick-btn slick-next__partners"><img src="img/advantages/next_1.png" alt=""></button>',
           responsive: [
@@ -91,25 +93,11 @@ $(function(){
   
   
     new WOW().init();
-
-    // wow = new WOW(
-    //   {
-    //   boxClass:     'wow',      // default
-    //   animateClass: 'animated', // default
-    //   offset:       0,          // default
-    //   mobile:       false       // default
-    //   }
-    //                   )
-    //   wow.init();
-
- 
-
    
     $('.menu__big-btn').on('click', function() {
       $('.menu__list').slideToggle();
     });
  
-       
 
 
 });

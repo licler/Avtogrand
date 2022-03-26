@@ -14,19 +14,19 @@
             <div class="header__top">
                 <div class="header__top-wrapper">
                     <a class="header__top-email" href="tel:74993228580">+7 499 322-85-80 </a>
-                    <nav class="header__menu">
+                    <nav class="header__menu" id = "nav">
                         <div class="menu__big-btn">
                             <div></div>
                             <div></div>
                             <div></div>
                         </div>
                         <ul class="menu__list">
-                            <li><a href="#">Как мы работаем </a></li>
-                            <li><a href="#">Преимущества</a></li>
-                            <li><a href="#">Отзывы</a></li>
-                            <li><a href="#">Тарифы</a></li>
-                            <li><a href="#">Партнеры</a></li>
-                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#Как мы работаем">Как мы работаем </a></li>
+                            <li><a href="#Преимущества">Преимущества</a></li>
+                            <li><a href="#Отзывы">Отзывы</a></li>
+                            <li><a href="#Тарифы">Тарифы</a></li>
+                            <li><a href="#Партнеры">Партнеры</a></li>
+                            <li><a href="#Контакты">Контакты</a></li>
                         </ul>
                     </nav>
                     <a class="header__top-btn wow animate__animated animate__heartBeat" href="#">Перезвоните мне</a>
@@ -55,7 +55,7 @@
             </div>
         </div>
     </header>
-    <section class="info-page" style="background-image: url('img/header/info-bg.jpg');">
+    <section class="info-page" style="background-image: url('img/header/info-bg.jpg');" >
         <div class="container">
             <div class="info-page__wrapper">
                 <div class="info-page__title">
@@ -73,7 +73,7 @@
             </div>
         </div>
     </section>
-    <section class="services-page">
+    <section class="services-page" id = "Как мы работаем">
         <div class="container">
             <div class="services-page__title wow animate__animated animate__fadeInRight" data-wow-offset="250">
                 Услуги предоставляемые сервисом Advogrand
@@ -244,7 +244,7 @@
             </div>
         </div>
     </section>
-    <section class="specific-page">
+    <section class="specific-page" id="Преимущества">
         <div class="container">
             <div class="specific-page__wrapper">
                 <div class="specific-page__title wow animate__animated animate__fadeInRight" data-wow-offset="250">
@@ -381,7 +381,7 @@
         </div>
         </div>
     </section>
-    <section class="reviews-page">
+    <section class="reviews-page" id = "Отзывы">
         <div class="container-fluid">
             <div class="reviews-page__wrapper">
                 <div class="reviews-page__title wow animate__animated animate__fadeInRight" data-wow-offset="250">
@@ -482,7 +482,7 @@
         </div>
         </div>
     </section> 
-    <section class="partners-page">
+    <section class="partners-page" id="Партнеры">
         <div class="container-fluid">
             <div class="partners-page__wrapper">
                 <div class="partners-page__title wow animate__animated animate__fadeInRight" data-wow-offset="250">
@@ -499,13 +499,6 @@
                             <img src="img/partners/icon_2.jpg" alt="">
                         </a>
                     </div>
-                    <!-- <div class="partners-page__item">
-                        <a class="partners-page__link" href="#">
-                            «Глобэкс» — российский коммерческий банк. Основан в 1992 году. В 2012 году банк «Глобэкс»
-                            вошёл в ежегодный рейтинг надёжности Forbes. Банк попал в группу «Высокая надёжность», заняв
-                            30-е место с рейтингом 4 балла из 5-ти
-                        </a>
-                    </div> -->
                     <div class="partners-page__item">
                         <a href="#">
                             <img src="img/partners/icon_3.jpg" alt="">
@@ -521,13 +514,6 @@
                             <img src="img/partners/icon_2.jpg" alt="">
                         </a>
                     </div>
-                    <!-- <div class="partners-page__item">
-                        <a class="partners-page__link" href="#">
-                            «Глобэкс» — российский коммерческий банк. Основан в 1992 году. В 2012 году банк «Глобэкс»
-                            вошёл в ежегодный рейтинг надёжности Forbes. Банк попал в группу «Высокая надёжность», заняв
-                            30-е место с рейтингом 4 балла из 5-ти
-                        </a>
-                    </div> -->
                     <div class="partners-page__item">
                         <a href="#">
                             <img src="img/partners/icon_3.jpg" alt="">
@@ -537,7 +523,7 @@
             </div>
         </div>
     </section> 
-    <section class="tarif-page">
+    <section class="tarif-page" id="Тарифы">
         <div class="container">
             <div class="tarif-page__wrapper  wow animate__animated animate__fadeInLeft" data-wow-offset="250">
                 <div class="tarif-page__title">
@@ -661,7 +647,7 @@
             </div>
         </div>
     </section>
-    <section class="contacts-page">
+    <section class="contacts-page" id="Контакты">
         <div class="container">
             <div class="contacts-page__wrapper">
                 <div class="contacts-page__box wow animate__animated animate__fadeInDown animate__delay-1s">
@@ -674,7 +660,7 @@
                         </legend>
                         <input type="text">
                         <legend>Ваш номер телефона</legend>
-                        <input type="text">
+                        <input type="text" name="tel">
                         <legend>Сообщение или вопрос</legend>
                         <textarea type="text"></textarea>
                         <button type="submit">Заказать звонок консультанта</button>
